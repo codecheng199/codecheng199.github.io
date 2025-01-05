@@ -114,11 +114,28 @@
                     document.getElementById("work-duration").innerText = data["employment_duration"];
                     document.getElementById("work-responsibilities").innerText = data["responsibilities"];
 
-                    document.getElementById("projects-title").innerText = data["projects"];
-                    document.getElementById("project1-title").innerText = data["project1_title"];
-                    document.getElementById("project1-details").innerHTML = data["project1_details"]; // 更新内容
-                    document.getElementById("project2-title").innerText = data["project2_title"];
-                    document.getElementById("project2-details").innerHTML = data["project2_details"];
+                document.getElementById("projects-title").innerText = data["projects"];
+                document.getElementById("project1-title").innerText = data["project1_title"];
+
+                const project1Details = document.getElementById("project1-details");
+                project1Details.innerHTML = ""; // 
+                data["project1_details"].forEach(item => {
+                    const p = document.createElement("p");
+                    p.innerText = item;
+                    project1Details.appendChild(p);
+                });
+
+                document.getElementById("project2-title").innerText = data["project2_title"];
+
+                const project2Details = document.getElementById("project2-details");
+                project2Details.innerHTML = ""; // 
+                data["project2_details"].forEach(item => {
+                    const p = document.createElement("p");
+                    p.innerText = item;
+                    project2Details.appendChild(p);
+                });
+            })
+            .catch(error => console.error("Error loading language file:", error));
                 });
         }
 
