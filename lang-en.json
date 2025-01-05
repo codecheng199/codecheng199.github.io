@@ -29,6 +29,7 @@
     "Development Time: March 2023 - Present",
     "Responsibilities and Achievements:",
     "1. Developed front-end and back-end functionalities including product display, coupon handling, order processing, and integration with third-party services",
-    "..."
+    "2. Design a cache queue model to address inventory concurrency issues, increasing the concurrency from 500 to about 10,000",
+    "3. Use Python to select external and internal large models for prompt debugging, and provide AI product search, AI recommendation and other functions"
   ]
 }
