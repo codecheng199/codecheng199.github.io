@@ -1,1 +1,26 @@
-<h1>欢迎来到我的主页！</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Text with JavaScript</title>
+</head>
+<body>
+ 
+    <!-- 创建一个用于显示文字的div元素 -->
+    <div id="textContainer"></div>
+ 
+    <script>
+        // 这段JavaScript代码将在网页加载完成后执行
+        document.addEventListener("DOMContentLoaded", function() {
+            // 定义你想要显示的文字
+            var text = "这是一段用JavaScript显示的文字。";
+            
+            // 获取div元素并设置其innerHTML为定义的文字
+            var textContainer = document.getElementById("textContainer");
+            textContainer.innerHTML = text;
+        });
+    </script>
+ 
+</body>
+</html>
