@@ -90,35 +90,36 @@
             loadLanguage(selectedLanguage);
         });
 
-        function loadLanguage(lang) {
-            fetch(`lang-${lang}.json`)
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById("page-title").innerText = data["education"];
-                    document.getElementById("education-title").innerText = data["education"];
-                    document.getElementById("university").innerText = data["university"];
-                    document.getElementById("education-duration").innerText = data["duration"];
-                    document.getElementById("education-courses").innerText = data["courses"];
-                    document.getElementById("education-gpa").innerText = data["gpa"];
+    function loadLanguage(lang) {
+        fetch(`lang-${lang}.json`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("page-title").innerText = data["page_title"];
+                document.getElementById("education-title").innerText = data["education"];
+                document.getElementById("university").innerText = data["university"];
+                document.getElementById("education-duration").innerText = data["duration"];
+                document.getElementById("education-courses").innerText = data["courses"];
+                document.getElementById("education-gpa").innerText = data["gpa"];
 
-                    document.getElementById("skills-title").innerText = data["skills"];
-                    document.getElementById("skills-languages").innerText = data["languages"];
-                    document.getElementById("skills-frameworks").innerText = data["frameworks"];
-                    document.getElementById("skills-databases").innerText = data["databases"];
-                    document.getElementById("skills-middleware").innerText = data["middleware"];
-                    document.getElementById("skills-tools").innerText = data["tools"];
+                document.getElementById("skills-title").innerText = data["skills"];
+                document.getElementById("skills-languages").innerText = data["languages"];
+                document.getElementById("skills-frameworks").innerText = data["frameworks"];
+                document.getElementById("skills-databases").innerText = data["databases"];
+                document.getElementById("skills-middleware").innerText = data["middleware"];
+                document.getElementById("skills-tools").innerText = data["tools"];
 
-                    document.getElementById("work-title").innerText = data["work"];
-                    document.getElementById("work-company").innerText = data["company"];
-                    document.getElementById("work-position").innerText = data["position"];
-                    document.getElementById("work-duration").innerText = data["employment_duration"];
-                    document.getElementById("work-responsibilities").innerText = data["responsibilities"];
+                document.getElementById("work-title").innerText = data["work"];
+                document.getElementById("work-company").innerText = data["company"];
+                document.getElementById("work-position").innerText = data["position"];
+                document.getElementById("work-duration").innerText = data["employment_duration"];
+                document.getElementById("work-responsibilities").innerText = data["responsibilities"];
 
                 document.getElementById("projects-title").innerText = data["projects"];
                 document.getElementById("project1-title").innerText = data["project1_title"];
 
+                // 动态生成项目1详情
                 const project1Details = document.getElementById("project1-details");
-                project1Details.innerHTML = ""; // 
+                project1Details.innerHTML = ""; 
                 data["project1_details"].forEach(item => {
                     const p = document.createElement("p");
                     p.innerText = item;
@@ -127,8 +128,9 @@
 
                 document.getElementById("project2-title").innerText = data["project2_title"];
 
+                // 动态生成项目2详情
                 const project2Details = document.getElementById("project2-details");
-                project2Details.innerHTML = ""; // 
+                project2Details.innerHTML = ""; 
                 data["project2_details"].forEach(item => {
                     const p = document.createElement("p");
                     p.innerText = item;
@@ -136,8 +138,7 @@
                 });
             })
             .catch(error => console.error("Error loading language file:", error));
-                });
-        }
+    }
 
         // Load default language
         loadLanguage("zh-CN");
