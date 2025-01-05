@@ -1,0 +1,34 @@
+{
+  "education": "教育经历",
+  "university": "湖南大学 - 数学与应用数学专业",
+  "duration": "时间：2017年9月 - 2021年6月",
+  "courses": "主要课程：高等代数，高等数学，偏微分方程等",
+  "gpa": "成绩：GPA 3.8/4.0，多次获得校级奖学金",
+  "skills": "专业技能",
+  "languages": "编程语言：Java、Python、JavaScript",
+  "frameworks": "框架与技术：Spring Boot、Django、Vue.js",
+  "databases": "数据库：MySQL、PgSQL,Oracle,高斯DB",
+  "middleware": "中间件：redis,kafka,ES",
+  "tools": "工具与平台：Git、Docker、Jenkins、K8s、Svn",
+  "work": "就职经历",
+  "company": "公司名称：华为科技有限公司",
+  "position": "职位：软件开发工程师",
+  "employment_duration": "时间：2021年8月 - 至今",
+  "responsibilities": "工作内容：参与多个项目的后端开发，负责模块设计、编码及测试。",
+  "projects": "项目经历",
+  "project1_title": "项目一：华为ERP主干交易系统",
+  "project2_title": "项目二：华为钱包",
+  "project1_details": [
+    "开发时间：2021年07月 - 2023年3月",
+    "职责与成果：",
+    "1. 实施DDD敏捷开发，确保项目迭代内稳定上线",
+    "2. 组织20多位开发者进行100多次代码审查，提前发现200+代码质量问题",
+    "..."
+  ],
+  "project2_details": [
+    "开发时间：2023年3月 - 至今",
+    "职责与成果：",
+    "1. 参与前端和后端的开发，实现了商品展示、优惠券、订单处理、新增对接第三方服务等功能",
+    "..."
+  ]
+}
