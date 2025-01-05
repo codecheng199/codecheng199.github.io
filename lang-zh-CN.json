@@ -11,7 +11,7 @@
   "middleware": "中间件：redis,kafka,ES",
   "tools": "工具与平台：Git、Docker、Jenkins、K8s、Svn",
   "work": "就职经历",
-  "company": "公司名称：华为科技有限公司",
+  "company": "公司名称：华为技术有限公司",
   "position": "职位：软件开发工程师",
   "employment_duration": "时间：2021年8月 - 至今",
   "responsibilities": "工作内容：参与多个项目的后端开发，负责模块设计、编码及测试。",
