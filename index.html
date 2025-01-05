@@ -116,9 +116,9 @@
 
                     document.getElementById("projects-title").innerText = data["projects"];
                     document.getElementById("project1-title").innerText = data["project1_title"];
+                    document.getElementById("project1-details").innerHTML = data["project1_details"]; // 更新内容
                     document.getElementById("project2-title").innerText = data["project2_title"];
-                    document.getElementById("project1_details").innerText = data["project1_details"];
-                    document.getElementById("project2_details").innerText = data["project2_details"];
+                    document.getElementById("project2-details").innerHTML = data["project2_details"];
                 });
         }
 
