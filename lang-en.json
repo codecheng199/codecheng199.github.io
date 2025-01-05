@@ -23,7 +23,11 @@
     "Responsibilities and Achievements:",
     "1. Implemented DDD agile development to ensure stable project iterations and launches",
     "2. Organized 100+ code reviews for 20+ developers, identified 200+ quality issues",
-    "..."
+    "3. To address the challenges of large transaction volumes, extensive wide table content, and slow generation during monthly and annual closing periods, ClickHouse + Flink was adopted to achieve integrated stream and batch processing, summarizing transaction data and enhancing transaction performance from 30 minutes to 30 seconds.",
+    "4. APM and Grafana monitoring tools were introduced to visualize thread count, CPU usage, and other data during container operation. Once issues such as OOM were detected, headDump files were downloaded for analysis and handling.",
+    "5. OpenResty was utilized to build an API gateway through the combination of Nginx and Lua scripts",
+    "6. Redis and Caffeine caching middleware were introduced to improve system concurrency efficiency",
+    "7. Led the project to upgrade from VUE2 to VUE3."
   ],
   "project2_details": [
     "Development Time: March 2023 - Present",
